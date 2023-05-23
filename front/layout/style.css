@@ -2,6 +2,7 @@
   /* border-top: 10px solid #1098ad; */
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 /* PAGE SECTIONS */
@@ -14,7 +15,7 @@ body {
 }
 
 .container {
-  width: 800px;
+  width: 1250px;
   /* margin-left: auto;
   margin-right: auto; */
   margin: 0 auto;
@@ -50,8 +51,9 @@ aside {
   border-bottom: 5px solid #1098ad;
   /* padding-top: 50px;
   padding-bottom: 50px; */
-  padding: 50px 0;
-  width: 500px;
+  padding: 50px 40px;
+  /* width: 500px;
+   */
 }
 
 /* SMALLER ELEMENTS */
@@ -82,6 +84,7 @@ h4 {
   font-size: 20px;
   text-transform: uppercase;
   text-align: center;
+  margin-bottom: 30px;
 }
 
 p {
@@ -134,6 +137,7 @@ li:last-child {
 
 .related {
   list-style: none;
+  margin: 0;
 }
 
 body {
@@ -265,3 +269,51 @@ footer p {
 nav p {
   font-size: 18px;
 } */
+
+/* FLOAT */
+
+.author-img {
+  float: left;
+  margin-bottom: 10px;
+}
+
+.author {
+  /* padding-left: 80px; */
+  /* float: left; */
+  margin-left: 62px;
+}
+
+h1 {
+  float: left;
+}
+
+nav {
+  float: right;
+}
+
+.clear {
+  clear: both;
+}
+
+.clearfix::after {
+  clear: both;
+  content: "";
+  display: block;
+}
+
+article {
+  /* background-color: #1098ad; */
+  width: 830px;
+  float: left;
+}
+
+aside {
+  /* background-color: #ffe70e; */
+  width: 340px;
+  float: right;
+}
+
+footer {
+  /* background-color: antiquewhite; */
+  clear: both;
+}
