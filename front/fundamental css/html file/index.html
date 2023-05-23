@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link rel="stylesheet" href="../css/style.css" />
     <title>The Basic Language of the Web: HTML</title>
   </head>
 
@@ -37,7 +38,9 @@
           width="50"
         />
 
-        <p>Posted by <strong>Hadya Ahmadi</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Hadya Ahmadi</strong> on Monday, June 21st 2027
+        </p>
 
         <img
           src="../image1.jpg"
@@ -45,6 +48,7 @@
           width="500"
           height="200"
         />
+        <button>❤️ Like</button>
       </header>
 
       <p>
@@ -112,7 +116,7 @@
     <aside>
       <h4>Related posts</h4>
 
-      <ul>
+      <ul class="related">
         <li>
           <img
             src="../images/man.jpg"
@@ -121,7 +125,7 @@
             width="75"
           />
           <a href="#">How to Learn Web Development</a>
-          <p>By Karim Muradi</p>
+          <p class="related-author">By Karim Muradi</p>
         </li>
         <li>
           <img
@@ -131,7 +135,7 @@
             heigth="75"
           />
           <a href="#">The Unknown Powers of CSS</a>
-          <p>By Razia Sarwari</p>
+          <p class="related-author">By Razia Sarwari</p>
         </li>
         <li>
           <img
@@ -141,11 +145,13 @@
             height="75"
           />
           <a href="#">Why JavaScript is Awesome</a>
-          <p>By Ali Karimi</p>
+          <p class="related-author">By Ali Karimi</p>
         </li>
       </ul>
     </aside>
 
-    <footer>Copyright &copy; 2024 by The Code Magazine.</footer>
+    <footer>
+      <p id="copyrihgt">Copyright &copy; 2024 by The Code Magazine.</p>
+    </footer>
   </body>
 </html>
